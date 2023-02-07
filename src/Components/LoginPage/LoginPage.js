@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React, { Component } from "react";
 import inst_image from "../../Images/9364675fb26a.svg";
 import inst_logo from "../../Images/logoinsta.png";
+import './LoginPage.css';
 class LoginPage extends Component
 {
   constructor ( props )
