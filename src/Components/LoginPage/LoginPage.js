@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import React, { Component } from "react";
-import inst_image from ''
+import inst_image from "../../Images/9364675fb26a.svg";
+import inst_logo from "../../Images/logoinsta.png";
 class LoginPage extends Component
 {
   constructor ( props )
@@ -8,7 +9,7 @@ class LoginPage extends Component
     super( props );
     this.state = {}
   }
-  render ()
+  render ()  
   {
     return (
       <div>
@@ -19,8 +20,11 @@ class LoginPage extends Component
           <Grid item xs={ 6 }>
             <div >
               <div>
-                <img src={ inst_image } />
+                <img src={ inst_image } width="450" />
               </div>
+            </div>
+            <div>
+              <img src={ inst_logo } width="450" />
             </div>
           </Grid>
           <Grid item xs={ 3 }>
