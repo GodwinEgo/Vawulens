@@ -2,4 +2,6 @@
   display: flex;
 }
 
-.loginpage_logo {}
+.loginpage_logo {
+  width: 175px;
+}
