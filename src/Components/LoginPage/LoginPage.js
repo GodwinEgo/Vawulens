@@ -18,7 +18,7 @@ class LoginPage extends Component
             Hello
           </Grid>
           <Grid item xs={ 6 }>
-            <div >
+            <div className="loginpage_main" >
               <div>
                 <img src={ inst_image } width="450" />
               </div>
