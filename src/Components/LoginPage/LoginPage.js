@@ -24,8 +24,8 @@ class LoginPage extends Component
                 <img src={ inst_image } width="450" />
               </div>
             </div>
-            <div>
-              <img src={ inst_logo } />
+            <div className="loginpage_rightcomponent">
+              <img className="loginpage_logo" src={ inst_logo } />
             </div>
           </Grid>
           <Grid item xs={ 3 }>
