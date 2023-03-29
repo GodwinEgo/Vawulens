@@ -1,4 +1,6 @@
 import React from 'react'
+import { BrowserRouter, Routes } from 'react-router-dom'
+import Navbar from './Components/Navbar'
 import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
 import Gallery from './Pages/Gallery/Gallery'
@@ -10,15 +12,18 @@ import Trainers from './Pages/Trainers/Trainers'
 const App = () =>
 {
   return (
-    <div>
-      <Home />
-      <About />
-      <Contact />
-      <Gallery />
-      <Plans />
-      <NotFound />
-      <Trainers />
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Home />
+        <About />
+        <Contact />
+        <Gallery />
+        <Plans />
+        <NotFound />
+        <Trainers />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
