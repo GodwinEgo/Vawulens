@@ -2,7 +2,9 @@ import React from 'react'
 import './Navbar.css'
 import logo from '../Images/logo.png'
 import { Link, NavLink } from 'react-router-dom'
-import links from '../data'
+import { links } from '../data'
+import { CiMenuFries } from 'react-icons/ci'
+
 
 const Navbar = () =>
 {
@@ -26,6 +28,9 @@ const Navbar = () =>
             } )
           }
         </ul>
+        <button className="nav__toggle-btn">
+          <CiMenuFries />
+        </button>
       </div>
     </nav>
   )
