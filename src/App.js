@@ -1,14 +1,12 @@
-import React from 'react';
-import './App.css';
-import LoginPage from './Components/LoginPage/LoginPage';
+import React from 'react'
 
-function App ()
+const App = () =>
 {
   return (
-    <div className="App">
-      <LoginPage />
+    <div>
+      HomePage
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
