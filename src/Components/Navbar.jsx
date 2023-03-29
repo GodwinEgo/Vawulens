@@ -14,12 +14,12 @@ const Navbar = () =>
         </Link>
         <ul className="nav__links">
           {
-            links.map( ( { tem, path }, index ) =>
+            links.map( ( { name, path }, index ) =>
             {
               return (
                 <li>
-                  <NavLink>
-
+                  <NavLink to={ path }>
+                    { name }
                   </NavLink>
                 </li>
               )
