@@ -65,6 +65,8 @@ nav {
     background: transparent;
     font-size: 1.8rem;
     cursor: pointer;
+    transition: var(--transition);
+    transform: rotate(90deg);
   }
 
   .nav__toggle-btn svg {
@@ -112,6 +114,6 @@ nav {
   }
 
   .rotate-back {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
   }
 }
