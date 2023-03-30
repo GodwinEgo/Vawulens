@@ -87,7 +87,7 @@ nav {
   .nav__links li {
     height: 4rem;
     width: 100%;
-    box-sizing: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
+    box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
   }
 
   .nav__links li a {
