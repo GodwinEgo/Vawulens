@@ -9,3 +9,34 @@ nav {
   right: 0;
   z-index: 99;
 }
+
+/* only shows on medium and small screens */
+.nav__toggle-btn {
+  display: none;
+}
+
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 7rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.nav__links a {
+  transition: var(--transition);
+}
+
+.nav__links a:hover {
+  color: var(--color-secondary);
+}
