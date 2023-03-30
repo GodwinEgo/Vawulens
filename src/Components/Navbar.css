@@ -43,6 +43,7 @@ nav {
 
 .active-nav {
   position: relative;
+  color: var(--color-secondary);
 }
 
 .active-nav::after {
@@ -50,9 +51,9 @@ nav {
   display: block;
   width: 1.2rem;
   height: 1.2rem;
-  background: red;
+  background: var(--color-primary);
   position: absolute;
   left: calc(50% - 0.6rem);
   transform: rotate(45deg);
-  margin-top: 0.9rem;
+  bottom: -2.5rem;
 }
