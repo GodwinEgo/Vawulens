@@ -13,7 +13,7 @@ const Navbar = () =>
   return (
     <nav>
       <div className="container nav__container">
-        <Link to='/' className='logo'>
+        <Link to='/' className='logo' onClick={ () => setIsNavShowing( false ) }>
           <img src={ logo } alt="Logo" />
         </Link>
         <ul className={ `nav__links ${ isNavShowing ? 'show__nav' : 'hide__nav' }` }>
@@ -22,7 +22,7 @@ const Navbar = () =>
             {
               return (
                 <li>
-                  <NavLink to={ path } className={ ( { isActive } ) => isActive ? 'active-nav' : '' }>
+                  <NavLink to={ path } className={ ( { isActive } ) => isActive ? 'active-nav' : '' } onClick={ () => setIsNavShowing( prev => !prev ) }>
                     { name }
                   </NavLink>
                 </li>
@@ -30,13 +30,13 @@ const Navbar = () =>
             } )
           }
         </ul>
-        <button className={ `nav__toggle-btn ${ isMenuIconRotated ? 'rotate-icon' : 'rotate-back' }` } onClick={ () => setIsNavShowing( !isNavShowing ) }>
+        <button className={ `nav__toggle-btn ${ isMenuIconRotated ? 'rotate-icon' : 'rotate-back' }` } onClick={ () => setIsNavShowing( prev => !prev ) }>
           <AiOutlineMenuUnfold
             onClick={ () => setIsMenuIconRotated( !isMenuIconRotated ) }
           />
         </button>
       </div>
-    </nav>
+    </nav >
   )
 }
 

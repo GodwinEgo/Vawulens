@@ -1,15 +1,14 @@
 import React from 'react'
-import NavUnder from '../../Components/NavUnder'
+import MainHeader from '../../Components/MainHeader'
 import './Home.css'
 
 
 const Home = () =>
 {
   return (
-    <div>
-      <NavUnder />
-      Home Page
-    </div>
+    <>
+      <MainHeader />
+    </>
   )
 }
 
