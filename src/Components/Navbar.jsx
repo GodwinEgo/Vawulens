@@ -20,7 +20,7 @@ const Navbar = () =>
             {
               return (
                 <li>
-                  <NavLink to={ path }>
+                  <NavLink to={ path } className={ ( { isActive } ) => isActive ? 'active-nav' : '' }>
                     { name }
                   </NavLink>
                 </li>
