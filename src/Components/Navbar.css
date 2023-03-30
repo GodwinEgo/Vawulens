@@ -106,4 +106,12 @@ nav {
   .hide__nav {
     display: none;
   }
+
+  .rotate-icon {
+    transform: rotate(270deg);
+  }
+
+  .rotate-back {
+    transform: rotate(0deg);
+  }
 }

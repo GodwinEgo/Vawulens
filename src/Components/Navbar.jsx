@@ -3,12 +3,13 @@ import './Navbar.css'
 import logo from '../Images/logo.png'
 import { Link, NavLink } from 'react-router-dom'
 import { links } from '../data'
-import { CgMenuHotdog } from 'react-icons/cg'
+import { MdOutlineMenuOpen } from 'react-icons/md'
 
 
 const Navbar = () =>
 {
   const [ isNavShowing, setIsNavShowing ] = useState( false )
+  const [ isMenuIconRotated, setIsMenuIconRotated ] = useState( false )
   return (
     <nav>
       <div className="container nav__container">
@@ -29,8 +30,10 @@ const Navbar = () =>
             } )
           }
         </ul>
-        <button className="nav__toggle-btn" onClick={ () => setIsNavShowing( !isNavShowing ) }>
-          <CgMenuHotdog />
+        <button className={ `nav__toggle-btn ${ isMenuIconRotated ? 'rotate-icon' : 'rotate-back' }` } onClick={ () => setIsNavShowing( !isNavShowing ) }>
+          <MdOutlineMenuOpen
+            onClick={ () => setIsMenuIconRotated( !isMenuIconRotated ) }
+          />
         </button>
       </div>
     </nav>
