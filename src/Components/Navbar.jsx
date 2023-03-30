@@ -3,7 +3,7 @@ import './Navbar.css'
 import logo from '../Images/logo.png'
 import { Link, NavLink } from 'react-router-dom'
 import { links } from '../data'
-import { CiMenuFries } from 'react-icons/ci'
+import { CgMenuHotdog } from 'react-icons/cg'
 
 
 const Navbar = () =>
@@ -29,7 +29,7 @@ const Navbar = () =>
           }
         </ul>
         <button className="nav__toggle-btn">
-          <CiMenuFries />
+          <CgMenuHotdog />
         </button>
       </div>
     </nav>
