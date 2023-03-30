@@ -57,3 +57,17 @@ nav {
   transform: rotate(45deg);
   bottom: -2.5rem;
 }
+
+/* MEDIA QUERIES (MEDIUM AND SMALL SCREENS) */
+@media (max-width:1024px) {
+  .nav__toggle-btn {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav__toggle-btn svg {
+    color: var(--color-gray-100);
+  }
+}
