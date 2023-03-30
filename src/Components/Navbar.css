@@ -70,4 +70,16 @@ nav {
   .nav__toggle-btn svg {
     color: var(--color-gray-100);
   }
+
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .active-nav {
+    display: none;
+  }
 }
