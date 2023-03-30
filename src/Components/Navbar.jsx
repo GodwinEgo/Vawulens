@@ -3,7 +3,7 @@ import './Navbar.css'
 import logo from '../Images/logo.png'
 import { Link, NavLink } from 'react-router-dom'
 import { links } from '../data'
-import { MdOutlineMenuOpen } from 'react-icons/md'
+import { AiOutlineMenuUnfold } from 'react-icons/ai'
 
 
 const Navbar = () =>
@@ -31,7 +31,7 @@ const Navbar = () =>
           }
         </ul>
         <button className={ `nav__toggle-btn ${ isMenuIconRotated ? 'rotate-icon' : 'rotate-back' }` } onClick={ () => setIsNavShowing( !isNavShowing ) }>
-          <MdOutlineMenuOpen
+          <AiOutlineMenuUnfold
             onClick={ () => setIsMenuIconRotated( !isMenuIconRotated ) }
           />
         </button>
